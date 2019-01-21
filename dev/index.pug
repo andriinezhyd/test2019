@@ -1,0 +1,18 @@
+include pug/common/_head
+	block content
+		include pug/common/_header
+		main#main(role="main")
+			.container
+				h1 Нежид Андрей
+				//-
+					input#cb_a(name="cb" type="radio" checked)
+					label(for="cb_a") A label here
+					br
+					input#cb_b(name="cb" type="radio")
+					label(for="cb_b") B label here
+					.styled-select.slate
+						select
+							option Here is the first option
+							option The second option
+							option The third option
+		include pug/common/_footer

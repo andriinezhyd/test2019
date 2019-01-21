@@ -1,0 +1,20 @@
+.btn {
+  @include animate(background);
+  background: $btn-background;
+  color: $btn-color;
+
+  &:hover {
+    background: $btn-hover-background;
+    color: $btn-hover-color;
+  }
+}
+
+.btn-group {
+  display: flex;
+
+  > .btn {
+    + .btn {
+      border-left: 0;
+    }
+  }
+}
